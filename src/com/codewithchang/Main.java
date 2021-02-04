@@ -107,6 +107,11 @@ public class Main {
                 playerMoney += playerBet;
                 endRound = true;
             }
+            else if(endRound == false) {
+                System.out.println("You lose the hand.");
+                playerMoney -= playerBet;
+                endRound = true;
+            }
 
             //Move both player and dealer cards back to deck
             playerDeck.moveAllToDeck(playingDeck);
